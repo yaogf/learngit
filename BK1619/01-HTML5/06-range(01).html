@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background: rgba(0,0,0,1);
+			}
+		</style>
+	</head>
+	<body>
+		<form method="get">
+			<input type="range" id="red" class="range" min="0" max="255" step="1" value="255"/>
+			<input type="range" id="green" class="range" min="0" max="255" step="1" value="255"/>
+			<input type="range" id="blue" class="range" min="0" max="255" step="1" value="255"/>
+			<input type="range" id="op" class="range" min="0" max="1" step="0.1" value="1"/>
+		</form>
+		<script type="text/javascript">
+			
+			//初始化方法
+			function setBgColor(){
+				
+				var red = document.querySelector("#red").value;
+				var green = document.querySelector("#green").value;
+				var blue = document.querySelector("#blue").value;
+				var op = document.querySelector("#op").value;
+				
+//				document.getElementsByTagName("body")[0].style = "background(rgba("+red+","+green+","+blue+","+op+"))";
+
+				document.getElementsByTagName("body")[0].style.background = "rgba("+red+","+green+","+blue+","+op+")";
+			}
+			
+			setBgColor();
+
+			var length = document.getElementsByClassName("range").length;
+			
+			for(var i=0;i<length;i++)
+			{
+				document.getElementsByClassName("range")[i].oninput = function(){
+					setBgColor();
+				}
+			}
+
+		</script>
+	</body>
+</html>

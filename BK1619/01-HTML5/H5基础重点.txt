@@ -1,0 +1,20 @@
+1、Html5分类
+
+结构化标签
+header footer nav article section aside figure figcaption time address hgroup
+
+功能性标签
+audio video canvas mark datalist(list) output
+
+表单增强元素
+search tel(required pattern novalidate) url email range(min max step) number
+
+date控件 color
+
+2、优点
+简单、文档结构清晰、有利于搜索引擎抓取、便于移动设备识别(交互)
+
+3、doctype
+作用：让浏览器按照某一种规则解释网页。
+规则：三种（严格模式、过渡模式、框架集模式）
+

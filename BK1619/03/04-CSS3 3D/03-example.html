@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#move{
+				width:90px;
+				height:60px;
+				background: url(img/test.png) no-repeat;
+				animation: move 0.5s step-end infinite;
+			}
+			@keyframes move{
+				0%{
+					background-position: 0;
+				}
+				20%{
+					transform: translateX(100px);
+					background-position: -90px;
+				}
+				40%{
+					transform: translateX(200px);
+					background-position: -180px;
+				}
+				60%{
+					transform: translateX(300px);
+					background-position: -270px;
+				}
+				80%{
+					transform: translateX(400px);
+					background-position: -360px;
+				}
+				100%{
+					transform: translateX(500px);
+					background-position: -450px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="move">
+			
+		</div>
+	</body>
+</html>
